@@ -9,11 +9,13 @@ x = 100
 y = 100
 vy = 0
 
-screen = pygame.display.set_mode((0,0), pygame.RESIZABLE)
+screen = pygame.display.set_mode((0, 0), pygame.RESIZABLE)
 red = pygame.Color("red")
+
 
 def main():
     while True:
+        global x, vy
         vy -= G
         x -= 1
         for e in pygame.event.get():
@@ -23,9 +25,10 @@ def main():
                 move(e)
             else:
                 pygame.draw.rect(screen, pygame.Color("black"),
-                                 pygame.Rect(0,0,screen.get_width(), screen.get_height()))
+                                 pygame.Rect(0, 0, screen.get_width(), screen.get_height()))
                 pygame.draw.rect(screen, red, pygame.Rect(x, y, 50, 50))
                 pygame.display.flip()
+
 
 def move(e):
     global x, y, screen, STEP
