@@ -2,17 +2,17 @@ from displayable import Displayable
 
 
 class Movable(Displayable):
-    """Base class for any object that can move on the gaming field.
-
-    Fields:
-
-    speed is linear speed of this object at this moment.
-
-    max_speed is maximal possible speed for this object.
-
-    min_speed is minimal possible speed for this object.
-
-    angle is angle of rotation for speed vector of this object."""
+    """
+    Base class for any object that can move on the gaming field.
+    
+    speed - linear speed of this object at this moment.
+    max_speed - maximal possible speed for this object.
+    min_speed - minimal possible speed for this object.
+    angle - angle of rotation for speed vector of this object.
+    
+    set_speed(self, speed)
+    move_forward(self)
+    """
 
     def __init__(self, init_speed, max_speed, min_speed, angle):
         self._speed = init_speed
