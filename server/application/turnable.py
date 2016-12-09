@@ -14,7 +14,6 @@ class Turnable(Displayable):
 
     max_angular_speed is maximum of absolute value of turning speed. Clockwise
     rotation speed equals to counterclockwise rotation speed."""
-    __metaclass__ = abc.ABCMeta
 
     def __init__(self, init_angle, init_angular_speed, max_angular_speed):
         self._angle = init_angle
