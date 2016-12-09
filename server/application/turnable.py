@@ -1,5 +1,6 @@
 from displayable import Displayable
 
+
 class Turnable(Displayable):
     """
     Base class for any object that can change it's 
