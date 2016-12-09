@@ -1,6 +1,4 @@
-import abc
-
-from server.application.Displayable import Displayable
+from displayable import Displayable
 
 
 class Movable(Displayable):
@@ -15,7 +13,6 @@ class Movable(Displayable):
     min_speed is minimal possible speed for this object.
 
     angle is angle of rotation for speed vector of this object."""
-    __metaclass__ = abc.ABCMeta
 
     def __init__(self, init_speed, max_speed, min_speed, angle):
         self._speed = init_speed
