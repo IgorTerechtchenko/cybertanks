@@ -1,7 +1,7 @@
 import abc
 
 
-class Displayable:
+class Displayable(Object):
     """Base class for any object to be displayed on game field"""
     __metaclass__ = abc.ABCMeta
 
@@ -30,6 +30,6 @@ class Displayable:
 
     @abc.abstractmethod
     def get_coordinates(self):
-        """Returns pair (x, y) of point considered to be center of this
+        """Returns tuple (x, y) containing coordinates of point considered to be center of this
         object."""
         return
