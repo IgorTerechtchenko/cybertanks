@@ -1,19 +1,19 @@
-import abc
-
 from displayable import Displayable
 
 class Turnable(Displayable):
-    """Base class for any object that can change it's rotation on gaming
-    field.
-
-    Fields:
-
-    angle is turn angle for this object.
-
-    angular_speed is speed of rotation of object at this moment.
-
-    max_angular_speed is maximum of absolute value of turning speed. Clockwise
-    rotation speed equals to counterclockwise rotation speed."""
+    """
+    Base class for any object that can change it's 
+    rotation on gaming field.
+    
+    angle - turn angle for this object.
+    angular_speed - speed of rotation of object at this moment.
+    max_angular_speed - maximum of absolute value of turning speed. Clockwise
+    rotation speed - equals to counterclockwise rotation speed.
+    
+    turn_on_angle(self)
+    set_angular_speed(self, angular_speed)
+    turn_to_face(self, x, y)
+    """
 
     def __init__(self, init_angle, init_angular_speed, max_angular_speed):
         self._angle = init_angle
