@@ -1,7 +1,6 @@
 import abc
 
-from server.application.Displayable import Displayable
-
+from displayable import Displayable
 
 class Turnable(Displayable):
     """Base class for any object that can change it's rotation on gaming
