@@ -8,4 +8,4 @@ class ObstacleTile(Tile):
     """
 
     def __init__(self, rect):
-        Tile.__init__(self, rect, OBSTACLE_COLOR)
+        Tile.__init__(self, rect, OBSTACLE_COLOR, "Obstacle tile")

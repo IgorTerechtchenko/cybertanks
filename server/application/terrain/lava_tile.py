@@ -8,4 +8,4 @@ class LavaTile(Tile):
     """
 
     def __init__(self, rect):
-        Tile.__init__(self, rect, LAVA_COLOR)
+        Tile.__init__(self, rect, LAVA_COLOR, "Lava tile")

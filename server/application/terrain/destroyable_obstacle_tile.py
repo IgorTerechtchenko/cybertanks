@@ -11,7 +11,7 @@ class ObstacleTile(Tile):
     """
 
     def __init__(self, rect):
-        Tile.__init__(self, rect, DESTROYABLE_OBSTACLE_COLOR)
+        Tile.__init__(self, rect, DESTROYABLE_OBSTACLE_COLOR, "Destroyable obstacle tile")
         self.hp = DESTROYABLE_OBSTACLE_HP
 
     def broken(self):

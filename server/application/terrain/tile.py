@@ -10,8 +10,8 @@ class Tile(Displayable):
     color is color with which the tile will be drawn.
     """
 
-    def __init__(self, rect, color):
-        Displayable.__init__(self, "Water")
+    def __init__(self, rect, color, name):
+        Displayable.__init__(self, name)
         self.rect = rect
         self.color = color
 
